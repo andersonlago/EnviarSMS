@@ -13,56 +13,56 @@
     tools:showIn="@layout/activity_main">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Numero:"
-        android:id="@+id/textView" />
+        android:text="Numero:" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/txtnumero"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="39dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:ems="10"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="39dp" />
+
+    <EditText
         android:id="@+id/txtmsg"
-        android:layout_below="@+id/txtnumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="88dp"
         android:layout_alignRight="@+id/button"
-        android:layout_alignEnd="@+id/button" />
+        android:layout_below="@+id/txtnumero"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mensagem:"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/txtnumero"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="53dp" />
+        android:layout_below="@+id/txtnumero"
+        android:layout_marginTop="53dp"
+        android:text="Mensagem:" />
 
     <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enviar"
-        android:id="@+id/button"
-        android:layout_below="@+id/txtmsg"
+        android:layout_alignEnd="@+id/txtnumero"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="81dp"
         android:layout_alignRight="@+id/txtnumero"
-        android:layout_alignEnd="@+id/txtnumero"
-        android:onClick="onClick" />
+        android:layout_below="@+id/txtmsg"
+        android:layout_marginTop="81dp"
+        android:onClick="onClick"
+        android:text="Enviar" />
 
 </RelativeLayout>
